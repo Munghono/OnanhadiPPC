@@ -1,0 +1,343 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>:: Onanhadi Pentecostal Protestant Church ::</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/basic-jquery-slider.css"/>
+<script src="scripts/jquery-1.6.2.min.js"></script>
+<script src="scripts/basic-jquery-slider.js"></script>
+
+ <script>
+      $(document).ready(function() {
+        
+        $('#banner').bjqs({
+    'height' : 313,
+    'width' : 654,
+    'animation' : 'slide',
+    'animationDuration' : 200,
+    'centerMarkers' : false,
+    'centerControls' :false,
+//    'nextText': '<i class="icon-chevron-right icon-white"></i>',
+//    'prevText': '<i class="icon-chevron-left icon-white"></i>',
+    'useCaptions' : false,
+    'keyboardNav' : false
+        });
+        
+      });
+    </script>
+    <script src="scripts/jquery.fancybox-1.3.4.pack.js" type="text/javascript"></script>
+
+    <link href="css/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" />
+    <script src="scripts/jquery.fancybox-1.3.4.js" type="text/javascript"></script>
+
+    <script src="scripts/jquery.mousewheel-3.0.4.pack.js" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function() {
+			$("a[rel=product_group]").fancybox({
+				'transitionIn'		: 'elastic',
+				'transitionOut'		: 'elastic',
+				'titlePosition' 	: 'over',
+			});
+
+		});
+	</script>
+       <script type="text/javascript">
+		$(document).ready(function() {
+			$("a[rel=moments_of_worships]").fancybox({
+				'transitionIn'		: 'elastic',
+				'transitionOut'		: 'elastic',
+				'titlePosition' 	: 'over',
+			});
+
+		});
+	</script>
+    
+
+<script src="scripts/jquery-1.7.1.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+// refresh captcha
+	$('img#reload').click(function() { 
+		change_captcha();
+	});
+
+	function change_captcha()
+	{
+		document.getElementById('captcha').src="captcha.html?rnd=" + Math.random();
+	}
+
+
+	});
+// refresh Captcha
+	
+</script>   
+</head>
+<body>
+<div id="container">
+<div id="wrapper">
+<div id="main_bg">
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("li").hover(function() {
+			var itemwidth = $(this).width(); /* Getting the LI width */
+			$(this).prepend("<div class='hover'></div>"); /* Inserting a blank div into within li above the <a> tag*/
+			$(this).find("div").fadeIn('10000').css({ 'width' : itemwidth}); /* Using the itemwidth for the div to display properly*/
+			$(this).find("ul").fadeIn('1000').slideDown('10000').css("display", "block");	
+	} , function() {
+		$(this).find("div").slideUp('1000').fadeOut('1000');/* sliding up and fading out the hover div */
+		$(this).find("div").remove();/* removing the <div> code from html at every mouseout event*/
+		$(this).find("ul").fadeOut('1000'); /* fading out the sub menu */
+		
+	});
+	
+	
+
+	$(".search-input").focus(function(){
+		$(this).animate({width:'180px'}, 500); /* on focus, increasing the input width of search to left side*/
+	});
+	
+	$(".search-input").focusout(function(){
+		$(this).animate({width:'117px'}, 500);  /* on focus, decreasing the input width of search to left side*/
+	});
+	
+	
+
+});
+</script>
+<div id="header"><!-- Header Starts -->
+<div id="logo"> <a href="index.html"><img src="images/Church logo.png" width="130" height="128" /></a></div>
+ <div id="sprit_of_praise"><img src="images/Administration.png" width="265" height="100" /></div>
+<div id="jesus_message" >
+    <div style="float:right; width:300px; text-align:right">
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="77JPF2NZ2ULGW">
+        <input type="image" src="images/donate.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+    </form>
+
+    </div>
+<span class="jesus_msg_bluecolor">Mark 15:16</span><br />
+And he said unto them, "Go into all the world, and preach the gospel to the whole creation. He that believeth and is baptized shall be saved; but he that disbelieveth shall be condemned." <br />
+<!--<span class="jesus_msg_greycolor">Mathew 11:28</span>-->
+</div>
+<div id="allnav">
+
+<div id="bottom">
+
+<div class="main-navigation">
+	<ul>
+				<li><a href="index.html" title="Go to the Home page" class="nav_active">Home</a>
+					<ul>
+						<li><a href="Login2.html">Login</a></li>
+					</ul>
+				</li>
+				<li><a href="MembershipRegistration.html" title="Go to the Home page" class="nav_active">Membership Registration</a></li>
+				<li><a href="Baptism Form.html" title="Service Information" class="">Baptism</a></li>
+				<li><a href="DedicationForm.html" title="Additional Activities" class="">Dedication</a></li>
+				<li><a href="Marriege.html" title="Prayer Request"  class="">Marriege</a></li>
+				<li><a href="DeathNotification.html" title="Donation"  class="">Death Notification</a></li>
+				<li><a href="Equipments.html" title="Media" class="">Equipment</a></li>
+			</ul>
+
+</div>
+</div>
+
+</div>
+</div><!-- Header Ends -->
+<div id="cons_middle"> <!-- Cons Middle Starts -->
+<div id="cons_middle_left"> <!-- Cons Left Starts -->
+<h3>Equipment Form </h3>
+<span class="copyright_color">Fill in the form for the new equipment </span><br /> 
+
+<div id="form">
+
+<div id="contact_us_form">
+ <form id="getaquoteform" method="post">
+
+<input type="hidden" id="source" name="source" value="" />
+<input type="hidden" id="enq" name="enq" value="" />    
+<table class="appform" border="0" cellspacing="1" cellpadding="0">
+                     <thead>
+                      <tr>
+                        <th colspan="2"><span class="bold">Equipment Form</span></th>
+                      </tr>
+                      </thead>
+                        <tr>
+			      			<td>Product Name*</td>
+			      			<td><input type="text" pattern="^[a-zA-Z ]+" name="productname" placeholder=""></td>
+			      			<td>Serial Number*</td>
+			      			<td><input type="text" pattern="^[a-zA-Z ]+" name="snum" placeholder="" required="\s+"></td>
+			      		</tr>
+			      		<tr>
+			      			<td>Date Of Parchase</td>
+			      			<td><input type="Date" name="parchaseDate" placeholder=""></td>
+			      			<td>How was it parchased*</td>
+			      			<td><input type="text" pattern="^[a-zA-Z ]+" name="howParchased" placeholder="" required="\s+"></td>
+			      		</tr>
+                        <tr>
+                        <input type="submit" name="Cancel" value="cancel"> &nbsp; &nbsp;
+                        <input type="submit" name="Clear" value="Clear"> &nbsp; &nbsp;
+                        <input type="submit" name="Submit" value="Submit">  
+                        </tr>
+                        
+                </table>
+      
+		</form>
+     
+     </div>
+        
+        </div>
+
+
+</div> <!-- Cons Left Ends -->
+</div> <!-- Cons Middle Ends -->
+
+
+<div id="footer">
+<div class="footer_links">
+<h5>Discover</h5>
+<a href="index.html">Home</a><br />
+<a href="about_us.html">About Us</a><br />
+<a href="serviceinformation.html">Service Info</a><br />
+<a href="ministries.html">Ministries </a><br />
+
+<a href="contact_us.html">Contact Us </a></div>
+<div class="footer_links">
+<h5>&nbsp;</h5>
+<a href="prayer_request.html">Prayer Request</a><br />
+<a href="articles.html">Articles</a><br />
+<a href="media.html">Media </a><br />
+<a href="giving.html">Giving</a><br />
+<a href="photogallery.html">Photogallery </a><br />
+
+</div>
+<div class="footer_address">
+<h5>Address </h5>
+<strong>Frans Hangula</strong><br />
+Onanhadi Pentecostal Protestant Church<br />
+Onanhadi <br />
+Namibia <br />
+(Oshakati-Onhuno Rd, 15 KM from Oshakati.)<br />
+
+Tel : +264 812576478
+<br />
+
+Email: <span class="view_all_events"><a href="google:tmunghono@gmail.com">tmunghono@gmail.com</a></span><br /><br />
+</div>
+<div class="footer_copyrights">
+
+
+<div class="footer_newsletter">
+<h5>Join Our Email Newsletter </h5>
+<div class="newsletter_bg">
+<form action="" method="get">
+<input name="" type="text" class="textbox_bg" />
+<input type="image" name="imageField" id="imageField" src="images/join.jpg" class="join_bttn" height="26" />
+</form>
+</div>
+</div>
+<div class="copyrights">
+Copyright © 2020 <span class="copyright_color">O-PPC</span> All rights Reserved <br />
+Website Powered by <span class="copyright_color">Munghono</span>
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+</body>
+</html>
+
+<script type="text/javascript">
+		$(document).ready(function(){
+			var depends = function() {
+        		return !$("#serviceother").is(':hidden');
+			};
+					
+			$("#getaquoteform").validate({
+			debug: false,
+			rules: {
+				firstname: "required",
+				lastname: "required",
+				country: "required",
+							
+				email: {
+					required: true,
+					email: true
+				},
+				
+					
+				
+				
+				
+				serviceother: {
+					required: {depends:depends}	
+				},
+				prayerdetail: "required",
+				//captchacode: "required"
+			},
+			errorElement: "div",
+	        wrapper: "div",
+			errorPlacement: function(error, element) {
+				element.before(error);
+				offset = element.offset();
+				element.css({'border':'1px solid #FE5454'});
+				//error.css('left', offset.left);
+				//error.css('top', offset.top - element.outerHeight());
+				if (element.attr('type') == 'checkbox'){
+					element.parent().parent().before(error);
+				}
+			},
+			messages: {
+				firstname: "First Name Required",
+				lastname: "Last Name Required",
+				country: "Country Required",
+				email: {
+					required: "Email Required"
+				},
+				
+				prayerdetail: "Prayer Details Required",
+				
+				
+			
+				
+				
+			},
+			submitHandler: function(form) {
+				// do other stuff for a valid form
+				$("input[type=submit]").attr("disabled", "disabled").attr('value','Submitting...');
+				
+				$.post('process.html', $("#getaquoteform").serialize(), function(data) {
+					if(data == 'true'){
+						$('#contact_us_form').load('success.html');
+					}else{
+						$("input[type=submit]").removeAttr("disabled");	
+						$("input[type=submit]").attr('value','Submit Again!')
+					}
+				});
+			}
+		});
+		
+		
+		
+});
+</script>
+<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.validate/1.7/jquery.validate.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/jquery-ui.min.js"></script>
+
+
+
+

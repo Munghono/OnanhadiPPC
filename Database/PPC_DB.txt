@@ -1,0 +1,94 @@
+
+
+CREATE TABLE IF NOT EXISTS `baptism` (
+  `fName` varchar(50) NOT NULL default '',
+  `lName` varchar(50) NOT NULL default '',
+  `dateOfBirth` datetime NOT NULL,
+  `placeOfBirth` varchar(100) NOT NULL default '',
+  `idNo` int(11) NOT NULL,
+  `dateOfBaptism` datetime NOT NULL,
+  `placeOfBaptism` varchar(100) NOT NULL default '',
+  `mothersName` varchar(50) NOT NULL default '',
+  `fathersName` varchar(50) NOT NULL default '',
+  `contactDetails` varchar(100) NOT NULL default '',
+  `nextOfKin` varchar(50) NOT NULL default '',
+  `detailsOfnextOfKin` varchar(100) NOT NULL default '',
+  `rank` varchar(255) NOT NULL default '',
+  `residentialAddress` varchar(50) NOT NULL default '',
+  PRIMARY KEY  (`idNo`)
+)
+
+
+CREATE TABLE IF NOT EXISTS `membershipregistration` (
+  `id` int(5) NOT NULL auto_increment,
+  `fName` varchar(50) NOT NULL default '',
+  `lName` varchar(50) NOT NULL default '',
+  `idNo` int(11) NOT NULL,
+  `dateOfBirth` datetime NOT NULL,
+  `placeOfBirth` varchar(100) NOT NULL default '',
+  `dateOfBaptism` datetime NOT NULL,
+  `placeOfBaptism` varchar(100) NOT NULL default '',
+  `mothersNames` varchar(50) NOT NULL default '',
+  `fathersNames` varchar(50) NOT NULL default '',
+  `contactDetails` int(10) NOT NULL,
+  `nextOfKin` varchar(50) NOT NULL default '',
+  `detailsOfnextOfKin` varchar(100) NOT NULL default '',
+  `rank` varchar(255) NOT NULL default '',
+  `residentialAddress` varchar(50) NOT NULL default '',
+  `previousChurch` varchar(50) NOT NULL default '',
+  PRIMARY KEY  (`id`)
+)
+
+
+CREATE TABLE IF NOT EXISTS `dedication` (
+  `fName` varchar(50) NOT NULL default '',
+  `lName` varchar(50) NOT NULL default '',
+  `dateOfBirth` datetime NOT NULL,
+  `placeOfBirth` varchar(100) NOT NULL default '',
+  `dateOfDedication` datetime NOT NULL,
+  `placeOfDedication` varchar(100) NOT NULL default '',
+  `mothersNames` varchar(50) NOT NULL default '',
+  `fathersNames` varchar(50) NOT NULL default '',
+  `nextOfKin` varchar(50) NOT NULL default '',
+  `detailsOfnextOfKin` varchar(100) NOT NULL default '',
+  PRIMARY KEY  (`fName`, `lName`)
+)
+
+
+
+CREATE TABLE IF NOT EXISTS `marriege` (
+  `fName` varchar(50) NOT NULL default '',
+  `lName` varchar(50) NOT NULL default '',
+  `idNo` int(11) NOT NULL,
+  `spouseNames` varchar(100) NOT NULL default '',
+  `spouseNo` int(10) NOT NULL,
+  `marriegeDate` datetime NOT NULL,
+  `placeOfMarriege` varchar(100) NOT NULL default '',
+  PRIMARY KEY  (`idNo`)
+)
+
+
+
+CREATE TABLE IF NOT EXISTS `deathnotification` (
+  `fName` varchar(50) NOT NULL default '',
+  `lName` varchar(50) NOT NULL default '',
+  `id` int(11) NOT NULL,
+  `dateOfBirth` datetime NOT NULL,
+  `mothersName` varchar(50) NOT NULL default '',
+  `fathersName` varchar(50) NOT NULL default '',
+  `dateOfDeath` datetime NOT NULL,
+  PRIMARY KEY  (`id`)
+)
+
+
+
+CREATE TABLE IF NOT EXISTS `equipments` (
+  `productName` varchar(50) NOT NULL default '',
+  `serialNumber` varchar(50) NOT NULL default '',
+  `dateOfParchase` datetime NOT NULL,
+  `howWasParchased` varchar(50) NOT NULL default '',
+  PRIMARY KEY  (`serialNumber`)
+)
+
+
+
